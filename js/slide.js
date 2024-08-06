@@ -220,5 +220,5 @@ jigsaw.init(document.getElementById('captcha'), function () {
     alert("验证成功");
     // location.href("https://www.baidu.com");
     // sessionStorage.setItem("token", "321awd35aw4d");
-    location.href="./01.html";
+    location.href="./index.html";
 })
