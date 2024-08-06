@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .eyes {
+        width: 6px;
+        height: 14px;
+        background-color: #03a9f4;
+        
+        border-radius: 7px;
+        display: inline-block;
+        /* margin-left: 200px; */
+        margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p class="look_top">
+        <div class="eyes"></div>
+        <div class="eyes"></div>
+    </p>
+</body>
+<script src="./js/jquery-3.6.0.js"></script>
+<script>
+    $(function(){
+        function eyes(){
+            for(var i=0;i<2;i++){
+                $(".eyes").animate({height:"4px"},270)
+                $(".eyes").animate({height:"16px"},270)
+            }
+            
+            // $(".eyes").animate({height:"4px"},200)
+            // $(".eyes").animate({height:"16px"},200)
+        }
+        setTimeout(eyes,100)
+        setInterval(eyes,1000)
+    })
+</script>
+</html>

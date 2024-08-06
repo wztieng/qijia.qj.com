@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/my.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav_header">
+            <div class="n_left">
+                <a href="javascript:void(0);">
+                    <i class="icon iconfont icon-icon"></i>
+                </a>
+
+            </div>
+            <div class="n_right2">
+                <div class="cla">
+                    <span>2020级前端PLUS</span>
+                    <div class="win_cla">
+                        <div class="class_detail">
+                            <img src="http://changetm.oss-cn-beijing.aliyuncs.com/Course/Image/5a7db3ce-3b70-4efc-8d1a-5b0617911e18.jpg?x-oss-process=image/resize,m_fill,h_48,w_48"
+                                alt="">
+                            <div class="right">
+                                <p>2022级单招班群</p>
+                                <p>主讲老师：ChangeTeam</p>
+                            </div>
+                            <div class="default">设为默认</div>
+                        </div>
+                        <div class="class_detail">
+                            <img src="http://changetm.oss-cn-beijing.aliyuncs.com/Course/Image/5a7db3ce-3b70-4efc-8d1a-5b0617911e18.jpg?x-oss-process=image/resize,m_fill,h_48,w_48"
+                                alt="">
+                            <div class="right">
+                                <p>2022级单招班群</p>
+                                <p>主讲老师：ChangeTeam</p>
+                            </div>
+                            <div class="default">设为默认</div>
+                        </div>
+                        <div class="class_detail">
+                            <img src="http://changetm.oss-cn-beijing.aliyuncs.com/Course/Image/5a7db3ce-3b70-4efc-8d1a-5b0617911e18.jpg?x-oss-process=image/resize,m_fill,h_48,w_48"
+                                alt="">
+                            <div class="right">
+                                <p>2022级单招班群</p>
+                                <p>主讲老师：ChangeTeam</p>
+                            </div>
+                            <div class="default">设为默认</div>
+                        </div>
+                        <button class="all_clsbtn"><i class="iconfont icon-four-squares"></i> 启嘉网所有班群</button>
+                    </div>
+                </div>
+                <div class="informetion">
+                    <i class="iconfont icon-xiaoxi"></i>
+                </div>
+                <div class="avatar">
+                    <img src="./img/avatar.jpg" alt="">
+                    <div class="win_user">
+                        <a href="javascript:void(0);" class="userCenter">
+                            <i class="iconfont icon-geren"></i>
+                            <span>个人中心</span>
+                        </a>
+                        <a href="javascript:void(0);" class="out">
+                            <i class="iconfont icon-close"></i>
+                            <span>退出</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tupian">
+            <img src="https://changetm.oss-cn-beijing.aliyuncs.com/User/Background/bg-default-1.png" alt="">
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <div class="left-top">
+                    <div class="tx">
+                        <img src="http://changetm-cdn.oss-cn-beijing.aliyuncs.com/image/bg-default-2.png?x-oss-process=image/resize,m_fill,h_90,w_200"
+                            alt="">
+                        <div class="avatar"></div>
+                    </div>
+                    <h3>阿发发士</h3>
+                    <div class="msgbox">
+                        <div class="item">
+                            <p>70</p>
+                            <h5>人气</h5>
+                        </div>
+                        <div class="item">
+                            <p>5</p>
+                            <h5>获赞</h5>
+                        </div>
+                        <div class="item">
+                            <p>1</p>
+                            <h5>推荐</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="individual">
+                    <div class="title">个人名片</div>
+                    <div class="name">姓名：阿发发看</div>
+                    <div class="name">签名：这个家伙太懒了，还没有签名</div>
+                </div>
+                <div class="recent">
+                    <div class="title">
+                        <p>最近来访</p>
+                        <span>更多</span>
+                    </div>
+                    <div class="nolist">
+                        <div class="image">
+                            <img src="http://changetm-cdn.oss-cn-beijing.aliyuncs.com/webcdn/new_student/5.0.1/2021_4_15_8_37_18/img/empty.d1a9f3d8.png"
+                                alt="">
+                        </div>
+                        <p>暂无访客纪录</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                <template>
+                    <el-tabs v-model="activeName" @tab-click="handleClick">
+                        <el-tab-pane label="课程" name="course">
+                            <div class="course">
+                                <div class="course1">
+                                    <h4>2022</h4>
+                                    <p>06-至今</p>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course2">
+                                    <div class="image">
+                                        <img src="http://changetm.oss-cn-beijing.aliyuncs.com/Course/Image/5a7db3ce-3b70-4efc-8d1a-5b0617911e18.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="mulu">
+                                        <p>计算机基础特训营</p>
+                                        <span>学习中&nbsp;&nbsp;&nbsp;14课时</span>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course3">
+                                    <div class="msgbox">
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>学习笔记</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>任务单</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>优秀推荐</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course4">
+                                    <div class="item">
+                                        <p>D</p>
+                                        <h5>综合评分</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course1">
+                                    <h4>2022</h4>
+                                    <p>05-至今</p>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course2">
+                                    <div class="image">
+                                        <img src="http://changetm.oss-cn-beijing.aliyuncs.com/Course/Image/5a7db3ce-3b70-4efc-8d1a-5b0617911e18.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="mulu">
+                                        <p>计算机基础特训营</p>
+                                        <span>学习中&nbsp;&nbsp;&nbsp;14课时</span>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course3">
+                                    <div class="msgbox">
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>学习笔记</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>任务单</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>优秀推荐</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course4">
+                                    <div class="item">
+                                        <p>D</p>
+                                        <h5>综合评分</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course1">
+                                    <h4>2022</h4>
+                                    <p>04-至今</p>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course2">
+                                    <div class="image">
+                                        <img src="http://changetm.oss-cn-beijing.aliyuncs.com/Course/Image/5a7db3ce-3b70-4efc-8d1a-5b0617911e18.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="mulu">
+                                        <p>计算机基础特训营</p>
+                                        <span>学习中&nbsp;&nbsp;&nbsp;14课时</span>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course3">
+                                    <div class="msgbox">
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>学习笔记</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>任务单</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>优秀推荐</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course4">
+                                    <div class="item">
+                                        <p>D</p>
+                                        <h5>综合评分</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course1">
+                                    <h4>2022</h4>
+                                    <p>03-至今</p>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course2">
+                                    <div class="image">
+                                        <img src="http://changetm.oss-cn-beijing.aliyuncs.com/Course/Image/5a7db3ce-3b70-4efc-8d1a-5b0617911e18.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="mulu">
+                                        <p>计算机基础特训营</p>
+                                        <span>学习中&nbsp;&nbsp;&nbsp;14课时</span>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course3">
+                                    <div class="msgbox">
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>学习笔记</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>任务单</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>优秀推荐</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course4">
+                                    <div class="item">
+                                        <p>D</p>
+                                        <h5>综合评分</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course1">
+                                    <h4>2022</h4>
+                                    <p>02-至今</p>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course2">
+                                    <div class="image">
+                                        <img src="http://changetm.oss-cn-beijing.aliyuncs.com/Course/Image/5a7db3ce-3b70-4efc-8d1a-5b0617911e18.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="mulu">
+                                        <p>计算机基础特训营</p>
+                                        <span>学习中&nbsp;&nbsp;&nbsp;14课时</span>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course3">
+                                    <div class="msgbox">
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>学习笔记</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>任务单</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>优秀推荐</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course4">
+                                    <div class="item">
+                                        <p>D</p>
+                                        <h5>综合评分</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course1">
+                                    <h4>2022</h4>
+                                    <p>01-至今</p>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course2">
+                                    <div class="image">
+                                        <img src="http://changetm.oss-cn-beijing.aliyuncs.com/Course/Image/5a7db3ce-3b70-4efc-8d1a-5b0617911e18.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="mulu">
+                                        <p>计算机基础特训营</p>
+                                        <span>学习中&nbsp;&nbsp;&nbsp;14课时</span>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course3">
+                                    <div class="msgbox">
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>学习笔记</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>任务单</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>优秀推荐</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course4">
+                                    <div class="item">
+                                        <p>D</p>
+                                        <h5>综合评分</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course1">
+                                    <h4>2021</h4>
+                                    <p>11-至今</p>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course2">
+                                    <div class="image">
+                                        <img src="http://changetm.oss-cn-beijing.aliyuncs.com/Course/Image/5a7db3ce-3b70-4efc-8d1a-5b0617911e18.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="mulu">
+                                        <p>计算机基础特训营</p>
+                                        <span>学习中&nbsp;&nbsp;&nbsp;14课时</span>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course3">
+                                    <div class="msgbox">
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>学习笔记</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>任务单</h5>
+                                        </div>
+                                        <div class="item">
+                                            <p>0</p>
+                                            <h5>优秀推荐</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline"></div>
+                                <div class="course4">
+                                    <div class="item">
+                                        <p>D</p>
+                                        <h5>综合评分</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </el-tab-pane>
+                        <el-tab-pane label="任务单" name="Task orders">
+                            <div class="orders">
+                                <div class="orders1">
+                                    <span>时间：</span>
+                                    <div class="block">
+                                        <el-date-picker v-model="value1" type="daterange" range-separator="至"
+                                            start-placeholder="开始日期" end-placeholder="结束日期">
+                                        </el-date-picker>
+                                    </div>
+                                </div>
+                                <div class="orders2">
+                                    <span>班级：</span>
+                                    <div class="button">
+                                        <button>全部</button>
+                                        <button>2020级单招班群</button>
+                                        <button>2020级MAD02</button>
+                                        <button>2020级前端PLUS</button>
+                                    </div>
+                                </div>
+                                <div class="orders3">
+                                    <span>完成情况：</span>
+                                    <div class="button">
+                                        <button>全部</button>
+                                        <button>超神</button>
+                                        <button>优秀</button>
+                                        <button>合格</button>
+                                        <button>大坑</button>
+                                    </div>
+                                </div>
+                                <div class="orders4">
+                                    <div class="left">
+                                        <img src="https://changetm-cdn.oss-cn-beijing.aliyuncs.com/imglist/4.png"
+                                            alt="">
+                                    </div>
+                                    <div class="right">
+                                        <div class="top">
+                                            <h4>普通任务单2022-06-20</h4>
+                                            <span>2022年06月20日</span>
+                                        </div>
+                                        <div class="bottom">
+                                            <span class="txt">阿松大</span>
+                                            <span class="txt1">优秀</span>
+                                            <span class="txt2">班级：2020级前端PLUS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orders4">
+                                    <div class="left">
+                                        <img src="https://changetm-cdn.oss-cn-beijing.aliyuncs.com/imglist/4.png"
+                                            alt="">
+                                    </div>
+                                    <div class="right">
+                                        <div class="top">
+                                            <h4>普通任务单2022-06-20</h4>
+                                            <span>2022年06月20日</span>
+                                        </div>
+                                        <div class="bottom">
+                                            <span class="txt">阿松大</span>
+                                            <span class="txt1">优秀</span>
+                                            <span class="txt2">班级：2020级前端PLUS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orders4">
+                                    <div class="left">
+                                        <img src="https://changetm-cdn.oss-cn-beijing.aliyuncs.com/imglist/4.png"
+                                            alt="">
+                                    </div>
+                                    <div class="right">
+                                        <div class="top">
+                                            <h4>普通任务单2022-06-20</h4>
+                                            <span>2022年06月20日</span>
+                                        </div>
+                                        <div class="bottom">
+                                            <span class="txt">阿松大</span>
+                                            <span class="txt1">优秀</span>
+                                            <span class="txt2">班级：2020级前端PLUS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orders4">
+                                    <div class="left">
+                                        <img src="https://changetm-cdn.oss-cn-beijing.aliyuncs.com/imglist/4.png"
+                                            alt="">
+                                    </div>
+                                    <div class="right">
+                                        <div class="top">
+                                            <h4>普通任务单2022-06-20</h4>
+                                            <span>2022年06月20日</span>
+                                        </div>
+                                        <div class="bottom">
+                                            <span class="txt">阿松大</span>
+                                            <span class="txt1">优秀</span>
+                                            <span class="txt2">班级：2020级前端PLUS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orders4">
+                                    <div class="left">
+                                        <img src="https://changetm-cdn.oss-cn-beijing.aliyuncs.com/imglist/4.png"
+                                            alt="">
+                                    </div>
+                                    <div class="right">
+                                        <div class="top">
+                                            <h4>普通任务单2022-06-20</h4>
+                                            <span>2022年06月20日</span>
+                                        </div>
+                                        <div class="bottom">
+                                            <span class="txt">阿松大</span>
+                                            <span class="txt1">优秀</span>
+                                            <span class="txt2">班级：2020级前端PLUS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orders4">
+                                    <div class="left">
+                                        <img src="https://changetm-cdn.oss-cn-beijing.aliyuncs.com/imglist/4.png"
+                                            alt="">
+                                    </div>
+                                    <div class="right">
+                                        <div class="top">
+                                            <h4>普通任务单2022-06-20</h4>
+                                            <span>2022年06月20日</span>
+                                        </div>
+                                        <div class="bottom">
+                                            <span class="txt">阿松大</span>
+                                            <span class="txt1">优秀</span>
+                                            <span class="txt2">班级：2020级前端PLUS</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </el-tab-pane>
+                        <el-tab-pane label="笔记" name="note">
+                            <div class="note">
+                                <div class="note1">
+                                    <span>时间：</span>
+                                    <div class="block">
+                                        <el-date-picker v-model="value1" type="daterange" range-separator="至"
+                                            start-placeholder="开始日期" end-placeholder="结束日期">
+                                        </el-date-picker>
+                                    </div>
+                                </div>
+                                <div class="note2">
+                                    <span>班级：</span>
+                                    <div class="button">
+                                        <button>全部</button>
+                                        <button>2020级单招班群</button>
+                                        <button>2020级MAD02</button>
+                                        <button>2020级前端PLUS</button>
+                                    </div>
+                                </div>
+                                <div class="note3">
+                                    <img src="http://changetm-cdn.oss-cn-beijing.aliyuncs.com/webcdn/new_student/5.0.1/2021_4_15_8_37_18/img/empty.d1a9f3d8.png"
+                                        alt="">
+                                </div>
+                                <p class="shouc">暂无收藏</p>
+                            </div>
+                        </el-tab-pane>
+                        <el-tab-pane label="项目" name="project">
+                            <div class="project">
+                                <div class="left">
+                                    <img src="https://changetm-cdn.oss-cn-beijing.aliyuncs.com/imglist/4.png" alt="">
+                                </div>
+                                <div class="right">
+                                    <div class="top">
+                                        <h4>第一次项目</h4>
+                                        <span>2022年06月20日</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="txt1">个人项目</span>
+                                        <span class="txt2">所属班级：2020级前端PLUS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </el-tab-pane>
+                        <el-tab-pane label="推荐" name="recommend">
+                            <div class="recommend">
+                                <span>类型：</span>
+                                <div class="button">
+                                    <button>全部</button>
+                                    <button>技术笔记</button>
+                                    <button>任务单</button>
+                                    <button>项目</button>
+                                </div>
+                            </div>
+                            <div class="recommend1">
+                                <div class="left">
+                                    <img src="https://changetm-cdn.oss-cn-beijing.aliyuncs.com/imglist/4.png" alt="">
+                                </div>
+                                <div class="right">
+                                    <div class="top">
+                                        <h4>JS变量 数据类型 运算符</h4>
+                                        <span>2022年06月20日</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="txt">学习笔记</span>
+                                        <span class="txt2">所属课程：javascript编程|班级：2020级前端PLUS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </el-tab-pane>
+                        <el-tab-pane label="收藏" name="collection">
+                            <div class="collection">
+                                <img src="http://changetm-cdn.oss-cn-beijing.aliyuncs.com/webcdn/new_student/5.0.1/2021_4_15_8_37_18/img/empty.d1a9f3d8.png"
+                                    alt="">
+                            </div>
+                            <p class="shouc">暂无收藏</p>
+                        </el-tab-pane>
+                    </el-tabs>
+                </template>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.6.0.js"></script>
+<script>
+    $(function () {
+        $(".cla").mouseover(function () {
+            $(".win_cla").css("display", "block")
+        })
+        $(".cla").mouseout(function () {
+            $(".win_cla").css("display", "none")
+        })
+        $(".avatar").mouseover(function () {
+            $(".win_user").css("display", "block")
+        })
+        $(".avatar").mouseout(function () {
+            $(".win_user").css("display", "none")
+            // $css("display", "none")
+        })
+        $(".out").click(function(){
+        sessionStorage.removeItem("token")
+        location.href="./01.html"
+        })
+
+    })
+
+    new Vue({
+        el: "#app",
+        data() {
+            return {
+                activeName: 'course',
+                value1: ''
+            };
+        },
+        methods: {
+            handleClick(tab, event) {
+                console.log(tab, event);
+            }
+        }
+    })
+</script>
+
+</html>

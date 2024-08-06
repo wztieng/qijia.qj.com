@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- <a href="./index.html" id="tiao"></a> -->
+    <!-- 头部 -->
+    <div class="header">
+        <a href="index.html" class="h1"> <i class=" iconfont icon-icon"></i></a>
+        <a href="" class="h2"> <i class=" iconfont icon-geren"></i></a>
+    </div>
+    <!-- 空隙线 -->
+    <div class="line"></div>
+    <!-- 启嘉网主题内容 -->
+    <div class="content">
+        <!-- 标题 -->
+        <div class="title">
+            <div class="title1">
+                <i class="iconfont icon-icon"></i>
+                <span></span>
+                <p>注册</p>
+            </div>
+        </div>
+        <!-- 内容线 -->
+        <div class="conline"></div>
+        <!-- 手机号输入框 -->
+        <div class="phone">
+            <p>手机号</p>
+            <input type="text" id="user" placeholder="请输入手机号"  maxlength="11" required>
+        </div>
+        <!-- 密码输入框 -->
+        <div class="password">
+            <p>输入密码</p>
+            <input type="password" id="pass" placeholder="设置密码" required>
+        </div>
+        <div class="test">
+            <p>输入手机验证码</p>
+            <div>
+                <input type="text" placeholder="输入验证码" required>
+                <a href="">发送验证码</a>
+            </div>
+        </div>
+        <!-- 立即注册 -->
+        <button class="register">立即注册</button>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="foot">
+            <p>STUDY CAN CHANGE EVERYTHING</p>
+            <span>Copyright © 2020 ~ 2021 , 北京盛哲科技有限公司. All right reserved.</span><br>
+            <a href="">冀ICP备 16008576号-1 冀公网安备 11010802028971号</a>
+        </div>
+    </div>
+    <div class="yin">
+        <div class="look">
+            <div class="look_top">
+                <div class="eyes"></div>
+                <div class="eyes"></div>
+            </div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAaCAYAAAAg0tunAAAAAXNSR0IArs4c6QAABUhJREFUaAXtWWtoHFUUPmdm9jmhD4xasEoI0kBrVXxVQa3xh40WU02arQWpRmv9o+Djj1WrrZGmVPABCkKDRNBUdtMGgoqxSgu1/ihaqta11lL6xwdpFUxnZ1+z93jupBM2ye7OTLJJk8YLy32c75x77jf33nNmFuD/MikG0NG+az9p3wymngHAGCFcAkSHlQDsyLfU/OBg5mId7kvX5XPiBURYweu3gGDfgnC08+waPCf5sAkkIgwkzM+4vncUSYhpFfGxXFv0k1Hjc6SjxlOrAehjJm1+8ZKZtGOXRfUVf9yPpiIFoYTROo48KSCKFIg+UnvNVtmdS0XrNVbxeveOJU9yQADXDKZTHbJtE1hA5U7ZKVmIVBDUo8WNppLyi3BQi6dXksA+3kDBcssjwAelzCZQEaCXA9rjbIgV9krDFXEXgVCLm7cRiE/l6au4HKIFUm4TSKj8VhEshWyQSHwRTJgPuWJnKUBNmC0E9BWvtcZtCYj4i8TYBIa18AccT1JuSsxiuCDEbi2RetUdO7sQWsLYzMT18i/qyXOkbRI3ksawgXs4GPezgZA3A9BzeUR/QkYiT/gZClocp8ifZL7Pm2ODVxdRwQ6rTX9F4kcIlB01kVrDIUY+BU32XQviSVTxUas1esgVOwMB8r4DEt0cVZd4dY8Je9taV/Osgx9FoByUd1xBcO4DZB9vB1i+RsFP5M3FtZEtpxsxUx43cyRXf06h00a6g1O3572vU/qPXVYsuonvP+Z8uIwjUA4HEka7ENjlxzhn6r8SKJsLsWjfedszslJ7Uw+goB1E0ODLQQV2b1mrP7wVURTrlSRQAjgLb+bj3MMkVk5xiq1xm5/OYUDlRast8vUY0QXtcgp2N4Do5F13i19HeHO883Kb/txY8qSdsgRKYSBuXC9kYAG6Uvb9FDa8nxTl3TtqI/0HGtHyo1strHy/P3g23YxCPMVnrtG3XURLIXg6v07nIFO6VCRQquhxY1GWSeT86ObSJlxGEf9CwG5NVXZlWsOnXNBVEYf3ZOotq7CRP4q0c0BcNCGjCP8iaG1WLLyvkr4rgVL5fKh/i3fik5WMucn4KPzEx3sAFGWgLhI6ePI+zLrpeJHbQSGVuZ39a+Kouorvt+Ve9Mph+Bo6qija+tza0PFyGGfcE4EO2M4Vh4OL7yPt2BipEU2e/AgfraQCmOQAlNRUOlGjhf850wxGcaSTOnx34aX9UJPKZhbmVVyCllgqgJbyQ1nGNm5ggLcEeMSBEg0+suzT9uvqo69/fxPmSyDGDfkiUGovjNP8ITLlbmwfZ61aA3aaQAZf0UNskm8Pmsdtfr3ymlr5d4SJOIYaPpJv1Y/40fZNoGPc/twjYCcfl2udsVlaD3Ee+0YDRXf+HMOc3zVMmEA50VYiZXtvZn2BxGu8S+r9Tn5h8ZhBoPciAb3zXAv+PVFfJkWgM+mN31Hgx1PmRs4wX2Iir3DGZ2SNvMsQPgwSbkvHor9P1seqEOg4MZx3mas5V9/EFzt/gJ26O8uZ02vNCz3BxHWFQe82YnjGq54brqoEFk8WiaevyoN4nO/IDUxkXbFs2tqIHIioH1HdxW9GB6Zi3ikjsNjZUDzTIGR+htTEO3MlH/PJpxzFEzhtjt68oKMcsQdAxS8bCuFDEwkMjjkv9bQQWOzI8JeQzK18gS+38zjO5XiXLmNMbTHOtc3/GLLzxzk/TPKbTpL/uUlGlOi3RgsOuupWETDtBJbzXb7tDMFQpBCaFxCUDgpSgkT5IFhBRCWTRwzmFBA5NVvIh/Rs9kxz7bhku5ztqRz/D4dE6xi7bwyxAAAAAElFTkSuQmCC"
+                class="look_mouth" alt="">
+
+        </div>
+        <div class="deng">
+            <button>
+                <a href="01.html">登录 / 注册</a>
+            </button>
+        </div>
+        <p>还在当咸鱼吗？赶快注册/登录启嘉网，成为IT大佬！</p>
+    </div>
+    <div class="slide">
+        <div class="container">
+            <div id="captcha" style="position: relative"></div>
+        </div>
+    </div>
+
+</body>
+<script src="./js/jquery-3.6.0.js"></script>
+<script src="./js/slide.js"></script>
+<script type="text/javascript">
+    $(function () {
+        // 眨眼效果
+        var time
+
+        function eyes() {
+            for (var i = 0; i < 2; i++) {
+                $(".eyes").animate({
+                    height: "4px"
+                }, 270)
+                $(".eyes").animate({
+                    height: "16px"
+                }, 270)
+            }
+        }
+        $(".h2").mouseover(function () {
+            $(".yin").css("display", "block")
+            time = setInterval(eyes, 2800)
+        })
+        $(".h2").mouseout(function () {
+            $(".yin").css("display", "none")
+            window.clearInterval(time)
+            // console.log('111') 
+        })
+        // 注册
+        $(".register").click(function () {
+            $user = $("#user").val()
+
+            $pass = $("#pass").val()
+            // console.log($user,$pass)
+            //正则
+            $userReg = /(^1[3|5|7|8]\d{9}$)/
+            $passReg = /(^[\w]{6,12}$)/
+            // console.log($userReg.test($user))
+            if ($userReg.test($user) && $passReg.test($pass)) {
+                alert("登录成功")
+                $(".slide").css("display", "block")
+            } else {
+                alert("手机号或密码错误！")
+            }
+        })
+    })
+</script>
+
+</html>

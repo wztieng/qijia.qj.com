@@ -1,0 +1,72 @@
+{
+  "id": "3481386",
+  "name": "qijia",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18171268",
+      "name": "表格,4宫格",
+      "font_class": "four-squares",
+      "unicode": "ea3e",
+      "unicode_decimal": 59966
+    },
+    {
+      "icon_id": "1114849",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "4767096",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e7fc",
+      "unicode_decimal": 59388
+    },
+    {
+      "icon_id": "1137061",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "1346675",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "1382585",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "18166660",
+      "name": "社交,钉钉,dingtalk",
+      "font_class": "dingtalk",
+      "unicode": "e8d6",
+      "unicode_decimal": 59606
+    },
+    {
+      "icon_id": "13644706",
+      "name": "个人",
+      "font_class": "geren",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "760571",
+      "name": "启嘉网",
+      "font_class": "icon",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
